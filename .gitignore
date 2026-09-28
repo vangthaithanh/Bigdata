@@ -1,0 +1,12 @@
+generated-data/
+*.csv
+*.parquet
+.env
+build/
+.gradle/
+output/calibration/*
+!output/calibration/.gitkeep
+*.log
+*.tmp
+Thumbs.db
+.DS_Store

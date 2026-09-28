@@ -1,0 +1,157 @@
+name: bigdata-healthcare
+
+services:
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: healthcare-namenode
+    restart: unless-stopped
+    env_file:
+      - ./hadoop/hadoop.env
+    environment:
+      CLUSTER_NAME: healthcare
+    ports:
+      - "${HDFS_NAMENODE_UI_PORT:-9870}:9870"
+    volumes:
+      - hadoop_namenode:/hadoop/dfs/name
+    mem_limit: 1536m
+    cpus: 1.0
+    networks:
+      - healthcare
+
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: healthcare-datanode
+    restart: unless-stopped
+    depends_on:
+      - namenode
+    env_file:
+      - ./hadoop/hadoop.env
+    environment:
+      SERVICE_PRECONDITION: "namenode:9870"
+    volumes:
+      - hadoop_datanode:/hadoop/dfs/data
+    mem_limit: 1536m
+    cpus: 1.0
+    networks:
+      - healthcare
+
+  hive-metastore-db:
+    image: bde2020/hive-metastore-postgresql:2.3.0
+    container_name: healthcare-hive-metastore-db
+    restart: unless-stopped
+    volumes:
+      - hive_metastore_db:/var/lib/postgresql/data
+    mem_limit: 768m
+    cpus: 0.5
+    networks:
+      - healthcare
+
+  hive-metastore:
+    image: bde2020/hive:2.3.2-postgresql-metastore
+    container_name: healthcare-hive-metastore
+    restart: unless-stopped
+    depends_on:
+      - namenode
+      - datanode
+      - hive-metastore-db
+    env_file:
+      - ./hadoop/hadoop.env
+    command: /opt/hive/bin/hive --service metastore
+    environment:
+      SERVICE_PRECONDITION: "namenode:9870 datanode:9864 hive-metastore-db:5432"
+      HIVE_SITE_CONF_javax_jdo_option_ConnectionURL: "jdbc:postgresql://hive-metastore-db/metastore"
+      HIVE_SITE_CONF_javax_jdo_option_ConnectionDriverName: "org.postgresql.Driver"
+      HIVE_SITE_CONF_javax_jdo_option_ConnectionUserName: "hive"
+      HIVE_SITE_CONF_javax_jdo_option_ConnectionPassword: "hive"
+      HIVE_SITE_CONF_hive_metastore_schema_verification: "false"
+      HIVE_SITE_CONF_datanucleus_schema_autoCreateAll: "true"
+    mem_limit: 1024m
+    cpus: 0.75
+    networks:
+      - healthcare
+
+  hive-server:
+    image: bde2020/hive:2.3.2-postgresql-metastore
+    container_name: healthcare-hive-server
+    restart: unless-stopped
+    depends_on:
+      - hive-metastore
+    env_file:
+      - ./hadoop/hadoop.env
+    environment:
+      SERVICE_PRECONDITION: "hive-metastore:9083"
+      HIVE_SITE_CONF_javax_jdo_option_ConnectionURL: "jdbc:postgresql://hive-metastore-db/metastore"
+      HIVE_SITE_CONF_javax_jdo_option_ConnectionDriverName: "org.postgresql.Driver"
+      HIVE_SITE_CONF_javax_jdo_option_ConnectionUserName: "hive"
+      HIVE_SITE_CONF_javax_jdo_option_ConnectionPassword: "hive"
+      HIVE_SITE_CONF_hive_metastore_uris: "thrift://hive-metastore:9083"
+      HIVE_SITE_CONF_hive_metastore_schema_verification: "false"
+    ports:
+      - "${HIVE_SERVER2_PORT:-10000}:10000"
+    mem_limit: 1280m
+    cpus: 1.0
+    networks:
+      - healthcare
+
+  spark-master:
+    image: apache/spark:3.5.5
+    container_name: healthcare-spark-master
+    restart: unless-stopped
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.master.Master
+      - --host
+      - spark-master
+      - --port
+      - "7077"
+      - --webui-port
+      - "8080"
+    environment:
+      HADOOP_CONF_DIR: /opt/spark/conf/hadoop
+      SPARK_NO_DAEMONIZE: "true"
+    ports:
+      - "${SPARK_MASTER_RPC_PORT:-7077}:7077"
+      - "${SPARK_MASTER_UI_PORT:-8081}:8080"
+    volumes:
+      - ./hadoop/core-site.xml:/opt/spark/conf/hadoop/core-site.xml:ro
+      - ./hadoop/hdfs-site.xml:/opt/spark/conf/hadoop/hdfs-site.xml:ro
+    mem_limit: 1024m
+    cpus: 1.0
+    networks:
+      - healthcare
+
+  spark-worker:
+    image: apache/spark:3.5.5
+    container_name: healthcare-spark-worker
+    restart: unless-stopped
+    depends_on:
+      - spark-master
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.worker.Worker
+      - spark://spark-master:7077
+      - --cores
+      - "1"
+      - --memory
+      - 1G
+      - --webui-port
+      - "8081"
+    environment:
+      HADOOP_CONF_DIR: /opt/spark/conf/hadoop
+      SPARK_NO_DAEMONIZE: "true"
+    volumes:
+      - ./hadoop/core-site.xml:/opt/spark/conf/hadoop/core-site.xml:ro
+      - ./hadoop/hdfs-site.xml:/opt/spark/conf/hadoop/hdfs-site.xml:ro
+    mem_limit: 1536m
+    cpus: 1.0
+    networks:
+      - healthcare
+
+networks:
+  healthcare:
+    name: healthcare-net
+
+volumes:
+  hadoop_namenode:
+  hadoop_datanode:
+  hive_metastore_db:
