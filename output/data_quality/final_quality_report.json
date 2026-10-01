@@ -1,0 +1,77 @@
+{
+  "claims": {
+    "duplicate_key_rows": 0,
+    "invalid_rows": 0,
+    "null_key_rows": 0,
+    "parse_error_rows": 0,
+    "raw_rows": 636753,
+    "silver_rows": 636753
+  },
+  "claims_transactions": {
+    "duplicate_key_rows": 0,
+    "invalid_rows": 0,
+    "null_key_rows": 0,
+    "parse_error_rows": 0,
+    "raw_rows": 5446261,
+    "silver_rows": 5446261
+  },
+  "conditions": {
+    "duplicate_key_rows": 0,
+    "invalid_rows": 0,
+    "null_key_rows": 0,
+    "parse_error_rows": 0,
+    "raw_rows": 208730,
+    "silver_rows": 208730
+  },
+  "encounters": {
+    "duplicate_key_rows": 0,
+    "invalid_rows": 0,
+    "negative_target_rows": 0,
+    "null_key_rows": 0,
+    "null_target_rows": 0,
+    "parse_error_rows": 0,
+    "raw_rows": 345663,
+    "silver_rows": 345663,
+    "stop_before_start_rows": 0
+  },
+  "medications": {
+    "duplicate_key_rows": 0,
+    "invalid_rows": 0,
+    "null_key_rows": 0,
+    "parse_error_rows": 0,
+    "raw_rows": 291090,
+    "silver_rows": 291090
+  },
+  "observations": {
+    "duplicate_key_rows": 0,
+    "invalid_rows": 157005,
+    "null_key_rows": 157005,
+    "parse_error_rows": 0,
+    "raw_rows": 4416666,
+    "silver_rows": 4416666
+  },
+  "patients": {
+    "duplicate_key_rows": 0,
+    "invalid_rows": 0,
+    "null_key_rows": 0,
+    "parse_error_rows": 0,
+    "raw_rows": 5715,
+    "silver_rows": 5715
+  },
+  "payers": {
+    "duplicate_key_rows": 0,
+    "invalid_rows": 0,
+    "null_key_rows": 0,
+    "parse_error_rows": 0,
+    "raw_rows": 10,
+    "silver_rows": 10
+  },
+  "procedures": {
+    "duplicate_key_rows": 0,
+    "invalid_rows": 0,
+    "null_key_rows": 0,
+    "parse_error_rows": 0,
+    "raw_rows": 943271,
+    "silver_rows": 943271
+  }
+}

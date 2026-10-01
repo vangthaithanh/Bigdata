@@ -1,0 +1,38 @@
+{
+  "age": {
+    "avg": 47.56323103329503,
+    "max": 109,
+    "min": 0
+  },
+  "categorical_cardinalities": {
+    "condition": 215,
+    "encounter_class": 10,
+    "ethnicity": 2,
+    "gender": 2,
+    "payer": 10,
+    "race": 6
+  },
+  "distinct_encounters": 345487,
+  "duplicates": 0,
+  "gold_rows": 345487,
+  "gold_size_bytes": 9247791,
+  "gold_size_mb": 8.819,
+  "nulls": {
+    "age": 0,
+    "condition": 0,
+    "encounter_class": 0,
+    "encounter_id": 0,
+    "ethnicity": 0,
+    "gender": 0,
+    "payer": 0,
+    "race": 0,
+    "total_claim_cost": 0
+  },
+  "path": "hdfs://namenode:8020/healthcare/gold/encounter_features",
+  "status": "PASS",
+  "target": {
+    "avg": 2688.0462246914085,
+    "max": 319231.16,
+    "min": 75.0
+  }
+}

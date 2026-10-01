@@ -1,0 +1,62 @@
+[
+  {
+    "average_claim_cost": 2905.428865724092,
+    "encounter_class": "ambulatory",
+    "encounter_count": 193489,
+    "total_claim_cost": 562168525.8000888
+  },
+  {
+    "average_claim_cost": 26908.145503331056,
+    "encounter_class": "inpatient",
+    "encounter_count": 5404,
+    "total_claim_cost": 145411618.30000103
+  },
+  {
+    "average_claim_cost": 1155.6077901197102,
+    "encounter_class": "wellness",
+    "encounter_count": 70221,
+    "total_claim_cost": 81147934.62999617
+  },
+  {
+    "average_claim_cost": 1375.7233486372124,
+    "encounter_class": "outpatient",
+    "encounter_count": 44215,
+    "total_claim_cost": 60827607.85999435
+  },
+  {
+    "average_claim_cost": 3205.347194819675,
+    "encounter_class": "emergency",
+    "encounter_count": 12509,
+    "total_claim_cost": 40095688.05999932
+  },
+  {
+    "average_claim_cost": 1009.5383296170002,
+    "encounter_class": "urgentcare",
+    "encounter_count": 15248,
+    "total_claim_cost": 15393440.450000018
+  },
+  {
+    "average_claim_cost": 14786.638422857128,
+    "encounter_class": "snf",
+    "encounter_count": 875,
+    "total_claim_cost": 12938308.619999986
+  },
+  {
+    "average_claim_cost": 11324.080062421981,
+    "encounter_class": "hospice",
+    "encounter_count": 801,
+    "total_claim_cost": 9070588.130000006
+  },
+  {
+    "average_claim_cost": 653.5652890792295,
+    "encounter_class": "home",
+    "encounter_count": 1868,
+    "total_claim_cost": 1220859.9600000007
+  },
+  {
+    "average_claim_cost": 478.9430805134182,
+    "encounter_class": "virtual",
+    "encounter_count": 857,
+    "total_claim_cost": 410454.2199999994
+  }
+]

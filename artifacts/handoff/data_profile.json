@@ -1,0 +1,23 @@
+{
+  "age": {
+    "avg": 47.56323103329503,
+    "max": 109,
+    "min": 0
+  },
+  "categorical_cardinalities": {
+    "condition": 215,
+    "encounter_class": 10,
+    "ethnicity": 2,
+    "gender": 2,
+    "payer": 10,
+    "race": 6
+  },
+  "gold_path": "hdfs://namenode:8020/healthcare/gold/encounter_features",
+  "gold_rows": 345487,
+  "target": {
+    "avg": 2688.0462246914085,
+    "max": 319231.16,
+    "min": 75.0
+  },
+  "validation_status": "PASS"
+}

@@ -1,0 +1,47 @@
+{
+  "raw_patients": {
+    "expected": 5715,
+    "actual": 5715,
+    "status": "PASS"
+  },
+  "raw_encounters": {
+    "expected": 345663,
+    "actual": 345663,
+    "status": "PASS"
+  },
+  "raw_conditions": {
+    "expected": 208730,
+    "actual": 208730,
+    "status": "PASS"
+  },
+  "raw_claims": {
+    "expected": 636753,
+    "actual": 636753,
+    "status": "PASS"
+  },
+  "raw_claims_transactions": {
+    "expected": 5446261,
+    "actual": 5446261,
+    "status": "PASS"
+  },
+  "raw_payers": {
+    "expected": 10,
+    "actual": 10,
+    "status": "PASS"
+  },
+  "raw_medications": {
+    "expected": 291090,
+    "actual": 291090,
+    "status": "PASS"
+  },
+  "raw_procedures": {
+    "expected": 943271,
+    "actual": 943271,
+    "status": "PASS"
+  },
+  "raw_observations": {
+    "expected": 4416666,
+    "actual": 4416666,
+    "status": "PASS"
+  }
+}

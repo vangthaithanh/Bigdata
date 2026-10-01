@@ -1,0 +1,36 @@
+{
+  "start_time": "2026-10-02T00:37:26.8033508+07:00",
+  "steps": {
+    "infrastructure_start_seconds": 17.557,
+    "synthea_generation_seconds": 38.091,
+    "hdfs_upload_seconds": 24.109,
+    "hive_validation_seconds": 128.159,
+    "silver_etl_seconds": 24.062,
+    "gold_build_seconds": 65.84
+  },
+  "raw": {
+    "population": 5000,
+    "bytes": 3937386877,
+    "gb": 3.667,
+    "rows": 12294159
+  },
+  "silver": {
+    "bytes": 442910281,
+    "gb": 0.412492
+  },
+  "gold": {
+    "bytes": 9247791,
+    "mb": 8.819,
+    "gb": 0.008613,
+    "rows": 345487
+  },
+  "reduction": {
+    "raw_to_silver_percent": 88.7512,
+    "raw_to_gold_percent": 99.7651
+  },
+  "validation": {
+    "gold_status": "PASS"
+  },
+  "end_time": "2026-10-02T00:42:24.6610646+07:00",
+  "status": "PASS"
+}

@@ -1,0 +1,252 @@
+[
+  {
+    "average_claim_cost": 861.8263497471897,
+    "condition": "Chronic kidney disease stage 4 (disorder)",
+    "encounter_count": 45490
+  },
+  {
+    "average_claim_cost": 1035.6296057365926,
+    "condition": "UNKNOWN",
+    "encounter_count": 39466
+  },
+  {
+    "average_claim_cost": 1001.1516209084909,
+    "condition": "Medication review due (situation)",
+    "encounter_count": 29940
+  },
+  {
+    "average_claim_cost": 839.7578361293723,
+    "condition": "End-stage renal disease (disorder)",
+    "encounter_count": 20565
+  },
+  {
+    "average_claim_cost": 3055.8855563528664,
+    "condition": "Gingivitis (disorder)",
+    "encounter_count": 19511
+  },
+  {
+    "average_claim_cost": 13028.2661896034,
+    "condition": "Normal pregnancy (finding)",
+    "encounter_count": 16371
+  },
+  {
+    "average_claim_cost": 3402.8016232564455,
+    "condition": "Patient referral for dental care (procedure)",
+    "encounter_count": 16202
+  },
+  {
+    "average_claim_cost": 2427.3856320233535,
+    "condition": "Contraception care (regime/therapy)",
+    "encounter_count": 15039
+  },
+  {
+    "average_claim_cost": 1289.4131301596342,
+    "condition": "Full-time employment (finding)",
+    "encounter_count": 14536
+  },
+  {
+    "average_claim_cost": 1307.5522531535664,
+    "condition": "Part-time employment (finding)",
+    "encounter_count": 9196
+  },
+  {
+    "average_claim_cost": 8755.318341697992,
+    "condition": "Allergic disposition (finding)",
+    "encounter_count": 9166
+  },
+  {
+    "average_claim_cost": 484.4377196520561,
+    "condition": "Dependent drug abuse (disorder)",
+    "encounter_count": 7933
+  },
+  {
+    "average_claim_cost": 85.54999999999546,
+    "condition": "Viral sinusitis (disorder)",
+    "encounter_count": 5903
+  },
+  {
+    "average_claim_cost": 293.77312262520974,
+    "condition": "Hyperlipidemia (disorder)",
+    "encounter_count": 5790
+  },
+  {
+    "average_claim_cost": 1246.3934848485128,
+    "condition": "Chronic congestive heart failure (disorder)",
+    "encounter_count": 5148
+  },
+  {
+    "average_claim_cost": 1675.5991125433848,
+    "condition": "Malignant neoplasm of breast (disorder)",
+    "encounter_count": 4034
+  },
+  {
+    "average_claim_cost": 243.9794458312481,
+    "condition": "Chronic pain (finding)",
+    "encounter_count": 4006
+  },
+  {
+    "average_claim_cost": 1262.0973876822384,
+    "condition": "Stress (finding)",
+    "encounter_count": 3361
+  },
+  {
+    "average_claim_cost": 656.2687134328478,
+    "condition": "Acute viral pharyngitis (disorder)",
+    "encounter_count": 3350
+  },
+  {
+    "average_claim_cost": 1530.4367022008366,
+    "condition": "Acute bronchitis (disorder)",
+    "encounter_count": 2908
+  },
+  {
+    "average_claim_cost": 12568.018406249934,
+    "condition": "Screening for malignant neoplasm of colon (procedure)",
+    "encounter_count": 2560
+  },
+  {
+    "average_claim_cost": 1136.5384152334173,
+    "condition": "Body mass index 30+ - obesity (finding)",
+    "encounter_count": 2442
+  },
+  {
+    "average_claim_cost": 1220.7317673653913,
+    "condition": "Anemia (disorder)",
+    "encounter_count": 2433
+  },
+  {
+    "average_claim_cost": 3054.256157635467,
+    "condition": "Ischemic heart disease (disorder)",
+    "encounter_count": 2233
+  },
+  {
+    "average_claim_cost": 1217.3605603253484,
+    "condition": "Social isolation (finding)",
+    "encounter_count": 2213
+  },
+  {
+    "average_claim_cost": 1259.4226459854017,
+    "condition": "Limited social contact (finding)",
+    "encounter_count": 2192
+  },
+  {
+    "average_claim_cost": 1041.2947184737004,
+    "condition": "Loss of teeth (disorder)",
+    "encounter_count": 2149
+  },
+  {
+    "average_claim_cost": 650.3188008342025,
+    "condition": "Transition from acute care to home-health care (finding)",
+    "encounter_count": 1918
+  },
+  {
+    "average_claim_cost": 886.5585095320594,
+    "condition": "Received higher education (finding)",
+    "encounter_count": 1731
+  },
+  {
+    "average_claim_cost": 573.075959031654,
+    "condition": "Essential hypertension (disorder)",
+    "encounter_count": 1611
+  },
+  {
+    "average_claim_cost": 60572.44970904488,
+    "condition": "Non-small cell carcinoma of lung  TNM stage 1 (disorder)",
+    "encounter_count": 1581
+  },
+  {
+    "average_claim_cost": 911.9545523941728,
+    "condition": "Risk activity involvement (finding)",
+    "encounter_count": 1441
+  },
+  {
+    "average_claim_cost": 240.73781069363997,
+    "condition": "Asthma (disorder)",
+    "encounter_count": 1384
+  },
+  {
+    "average_claim_cost": 184.52785992217804,
+    "condition": "Sinusitis (disorder)",
+    "encounter_count": 1285
+  },
+  {
+    "average_claim_cost": 1225.9840540540533,
+    "condition": "Not in labor force (finding)",
+    "encounter_count": 1258
+  },
+  {
+    "average_claim_cost": 1203.630624408704,
+    "condition": "Victim of intimate partner abuse (finding)",
+    "encounter_count": 1057
+  },
+  {
+    "average_claim_cost": 183.87806818181818,
+    "condition": "Acute bacterial sinusitis (disorder)",
+    "encounter_count": 1056
+  },
+  {
+    "average_claim_cost": 199.346701821668,
+    "condition": "Child attention deficit disorder (disorder)",
+    "encounter_count": 1043
+  },
+  {
+    "average_claim_cost": 147.88887096774113,
+    "condition": "Overdose (disorder)",
+    "encounter_count": 992
+  },
+  {
+    "average_claim_cost": 1300.3839016393454,
+    "condition": "Unhealthy alcohol drinking behavior (finding)",
+    "encounter_count": 915
+  },
+  {
+    "average_claim_cost": 4080.172766666676,
+    "condition": "Acute infective cystitis (disorder)",
+    "encounter_count": 900
+  },
+  {
+    "average_claim_cost": 85.54999999999995,
+    "condition": "Otitis media (disorder)",
+    "encounter_count": 886
+  },
+  {
+    "average_claim_cost": 1229.3416666666678,
+    "condition": "Has a criminal record (finding)",
+    "encounter_count": 882
+  },
+  {
+    "average_claim_cost": 14786.638422857128,
+    "condition": "Patient transfer to skilled nursing facility (procedure)",
+    "encounter_count": 875
+  },
+  {
+    "average_claim_cost": 4008.627875288674,
+    "condition": "Fracture of bone (disorder)",
+    "encounter_count": 866
+  },
+  {
+    "average_claim_cost": 8576.868535108977,
+    "condition": "Laceration - injury (disorder)",
+    "encounter_count": 826
+  },
+  {
+    "average_claim_cost": 1225.2888213851727,
+    "condition": "Prediabetes (finding)",
+    "encounter_count": 823
+  },
+  {
+    "average_claim_cost": 1265.2419754601235,
+    "condition": "Reports of violence in the environment (finding)",
+    "encounter_count": 815
+  },
+  {
+    "average_claim_cost": 5555.6694683544265,
+    "condition": "Sterilization requested (situation)",
+    "encounter_count": 790
+  },
+  {
+    "average_claim_cost": 867.8923589743623,
+    "condition": "Educated to high school level (finding)",
+    "encounter_count": 780
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "contract_version": "2.1",
+  "features": [
+    "age",
+    "gender",
+    "race",
+    "ethnicity",
+    "encounter_class",
+    "payer",
+    "condition"
+  ],
+  "target": "total_claim_cost"
+}

@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "final_population": 5000,
+  "final_path": "F:\\BigDataHealthcare\\generated-data\\final-5000",
+  "start_time": "2026-10-01T23:52:49.1352390+07:00",
+  "end_time": "2026-10-01T23:56:21.5035050+07:00",
+  "elapsed_seconds": 212.368,
+  "files": [
+    {
+      "file": "patients.csv",
+      "local_path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\patients.csv",
+      "hdfs_path": "/healthcare/raw/patients/patients.csv",
+      "local_bytes": 1718817,
+      "hdfs_bytes": 1718817,
+      "status": "PASS"
+    },
+    {
+      "file": "encounters.csv",
+      "local_path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\encounters.csv",
+      "hdfs_path": "/healthcare/raw/encounters/encounters.csv",
+      "local_bytes": 115817587,
+      "hdfs_bytes": 115817587,
+      "status": "PASS"
+    },
+    {
+      "file": "conditions.csv",
+      "local_path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\conditions.csv",
+      "hdfs_path": "/healthcare/raw/conditions/conditions.csv",
+      "local_bytes": 30325298,
+      "hdfs_bytes": 30325298,
+      "status": "PASS"
+    },
+    {
+      "file": "claims.csv",
+      "local_path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\claims.csv",
+      "hdfs_path": "/healthcare/raw/claims/claims.csv",
+      "local_bytes": 245526368,
+      "hdfs_bytes": 245526368,
+      "status": "PASS"
+    },
+    {
+      "file": "claims_transactions.csv",
+      "local_path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\claims_transactions.csv",
+      "hdfs_path": "/healthcare/raw/claims_transactions/claims_transactions.csv",
+      "local_bytes": 2484899101,
+      "hdfs_bytes": 2484899101,
+      "status": "PASS"
+    },
+    {
+      "file": "payers.csv",
+      "local_path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\payers.csv",
+      "hdfs_path": "/healthcare/raw/payers/payers.csv",
+      "local_bytes": 1937,
+      "hdfs_bytes": 1937,
+      "status": "PASS"
+    },
+    {
+      "file": "medications.csv",
+      "local_path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\medications.csv",
+      "hdfs_path": "/healthcare/raw/medications/medications.csv",
+      "local_bytes": 76711890,
+      "hdfs_bytes": 76711890,
+      "status": "PASS"
+    },
+    {
+      "file": "procedures.csv",
+      "local_path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\procedures.csv",
+      "hdfs_path": "/healthcare/raw/procedures/procedures.csv",
+      "local_bytes": 199169128,
+      "hdfs_bytes": 199169128,
+      "status": "PASS"
+    },
+    {
+      "file": "observations.csv",
+      "local_path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\observations.csv",
+      "hdfs_path": "/healthcare/raw/observations/observations.csv",
+      "local_bytes": 783216751,
+      "hdfs_bytes": 783216751,
+      "status": "PASS"
+    }
+  ]
+}

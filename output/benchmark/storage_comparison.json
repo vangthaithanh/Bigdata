@@ -1,0 +1,113 @@
+{
+  "gold": {
+    "bytes": 9247791,
+    "gb": 0.008613,
+    "mb": 8.819,
+    "path": "hdfs://namenode:8020/healthcare/gold/encounter_features",
+    "rows": 345487
+  },
+  "raw": {
+    "tables": {
+      "claims": {
+        "bytes": 245526368,
+        "mb": 234.152,
+        "path": "hdfs://namenode:8020/healthcare/raw/claims"
+      },
+      "claims_transactions": {
+        "bytes": 2484899101,
+        "mb": 2369.784,
+        "path": "hdfs://namenode:8020/healthcare/raw/claims_transactions"
+      },
+      "conditions": {
+        "bytes": 30325298,
+        "mb": 28.92,
+        "path": "hdfs://namenode:8020/healthcare/raw/conditions"
+      },
+      "encounters": {
+        "bytes": 115817587,
+        "mb": 110.452,
+        "path": "hdfs://namenode:8020/healthcare/raw/encounters"
+      },
+      "medications": {
+        "bytes": 76711890,
+        "mb": 73.158,
+        "path": "hdfs://namenode:8020/healthcare/raw/medications"
+      },
+      "observations": {
+        "bytes": 783216751,
+        "mb": 746.934,
+        "path": "hdfs://namenode:8020/healthcare/raw/observations"
+      },
+      "patients": {
+        "bytes": 1718817,
+        "mb": 1.639,
+        "path": "hdfs://namenode:8020/healthcare/raw/patients"
+      },
+      "payers": {
+        "bytes": 1937,
+        "mb": 0.002,
+        "path": "hdfs://namenode:8020/healthcare/raw/payers"
+      },
+      "procedures": {
+        "bytes": 199169128,
+        "mb": 189.942,
+        "path": "hdfs://namenode:8020/healthcare/raw/procedures"
+      }
+    },
+    "total_bytes": 3937386877,
+    "total_gb": 3.666977
+  },
+  "raw_to_gold_reduction_percent": 99.7651,
+  "raw_to_silver_reduction_percent": 88.743,
+  "silver": {
+    "tables": {
+      "claims": {
+        "bytes": 43977455,
+        "mb": 41.94,
+        "path": "hdfs://namenode:8020/healthcare/silver/claims"
+      },
+      "claims_transactions": {
+        "bytes": 312545688,
+        "mb": 298.067,
+        "path": "hdfs://namenode:8020/healthcare/silver/claims_transactions"
+      },
+      "conditions": {
+        "bytes": 4881764,
+        "mb": 4.656,
+        "path": "hdfs://namenode:8020/healthcare/silver/conditions"
+      },
+      "encounters": {
+        "bytes": 18165352,
+        "mb": 17.324,
+        "path": "hdfs://namenode:8020/healthcare/silver/encounters"
+      },
+      "medications": {
+        "bytes": 10564426,
+        "mb": 10.075,
+        "path": "hdfs://namenode:8020/healthcare/silver/medications"
+      },
+      "observations": {
+        "bytes": 26599296,
+        "mb": 25.367,
+        "path": "hdfs://namenode:8020/healthcare/silver/observations"
+      },
+      "patients": {
+        "bytes": 755827,
+        "mb": 0.721,
+        "path": "hdfs://namenode:8020/healthcare/silver/patients"
+      },
+      "payers": {
+        "bytes": 7578,
+        "mb": 0.007,
+        "path": "hdfs://namenode:8020/healthcare/silver/payers"
+      },
+      "procedures": {
+        "bytes": 25733001,
+        "mb": 24.541,
+        "path": "hdfs://namenode:8020/healthcare/silver/procedures"
+      }
+    },
+    "total_bytes": 443230387,
+    "total_gb": 0.41279
+  }
+}

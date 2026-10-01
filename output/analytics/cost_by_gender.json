@@ -1,0 +1,14 @@
+[
+  {
+    "average_claim_cost": 3045.0325592036234,
+    "encounter_count": 180396,
+    "gender": "F",
+    "total_claim_cost": 549311693.5500969
+  },
+  {
+    "average_claim_cost": 2297.9649555703545,
+    "encounter_count": 165091,
+    "gender": "M",
+    "total_claim_cost": 379373332.4800654
+  }
+]

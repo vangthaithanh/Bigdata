@@ -1,0 +1,905 @@
+{
+  "claims": {
+    "path": "hdfs://namenode:8020/healthcare/silver/claims",
+    "row_count": 636753,
+    "schema": [
+      {
+        "name": "id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "patient_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "provider_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "primary_patient_insurance_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "secondary_patient_insurance_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "department_id",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "patient_department_id",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "diagnosis1",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis2",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis3",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis4",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis5",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis6",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis7",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis8",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "referring_provider_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "appointment_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "current_illness_date",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "service_date",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "supervising_provider_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "status1",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "status2",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "status_p",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "outstanding1",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "outstanding2",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "outstanding_p",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "last_billed_date_1",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "last_billed_date_2",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "last_billed_date_p",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "healthcare_claim_type_id_1",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "healthcare_claim_type_id_2",
+        "nullable": true,
+        "type": "bigint"
+      }
+    ],
+    "status": "PASS"
+  },
+  "claims_transactions": {
+    "path": "hdfs://namenode:8020/healthcare/silver/claims_transactions",
+    "row_count": 5446261,
+    "schema": [
+      {
+        "name": "id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "claim_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "charge_id",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "patient_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "type",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "method",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "from_date",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "to_date",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "place_of_service",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "procedure_code",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "modifier1",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "modifier2",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis_ref_1",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis_ref_2",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis_ref_3",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "diagnosis_ref_4",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "units",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "department_id",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "notes",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "unit_amount",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "transfer_out_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "transfer_type",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "payments",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "adjustments",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "transfers",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "outstanding",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "appointment_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "line_note",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "patient_insurance_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "fee_schedule_id",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "provider_id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "supervising_provider_id",
+        "nullable": true,
+        "type": "string"
+      }
+    ],
+    "status": "PASS"
+  },
+  "conditions": {
+    "path": "hdfs://namenode:8020/healthcare/silver/conditions",
+    "row_count": 208730,
+    "schema": [
+      {
+        "name": "start",
+        "nullable": true,
+        "type": "date"
+      },
+      {
+        "name": "stop",
+        "nullable": true,
+        "type": "date"
+      },
+      {
+        "name": "patient",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "encounter",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "system",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "code",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "nullable": true,
+        "type": "string"
+      }
+    ],
+    "status": "PASS"
+  },
+  "encounters": {
+    "path": "hdfs://namenode:8020/healthcare/silver/encounters",
+    "row_count": 345663,
+    "schema": [
+      {
+        "name": "id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "start",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "stop",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "patient",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "organization",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "provider",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "payer",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "encounter_class",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "code",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "base_encounter_cost",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "total_claim_cost",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "payer_coverage",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "reason_code",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "reason_description",
+        "nullable": true,
+        "type": "string"
+      }
+    ],
+    "status": "PASS"
+  },
+  "medications": {
+    "path": "hdfs://namenode:8020/healthcare/silver/medications",
+    "row_count": 291090,
+    "schema": [
+      {
+        "name": "start",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "stop",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "patient",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "payer",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "encounter",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "code",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "base_cost",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "payer_coverage",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "dispenses",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "total_cost",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "reason_code",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "reason_description",
+        "nullable": true,
+        "type": "string"
+      }
+    ],
+    "status": "PASS"
+  },
+  "observations": {
+    "path": "hdfs://namenode:8020/healthcare/silver/observations",
+    "row_count": 4416666,
+    "schema": [
+      {
+        "name": "date",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "patient",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "encounter",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "category",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "code",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "value",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "units",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "type",
+        "nullable": true,
+        "type": "string"
+      }
+    ],
+    "status": "PASS"
+  },
+  "patients": {
+    "path": "hdfs://namenode:8020/healthcare/silver/patients",
+    "row_count": 5715,
+    "schema": [
+      {
+        "name": "id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "birthdate",
+        "nullable": true,
+        "type": "date"
+      },
+      {
+        "name": "deathdate",
+        "nullable": true,
+        "type": "date"
+      },
+      {
+        "name": "ssn",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "drivers",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "passport",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "prefix",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "first",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "middle",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "last",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "suffix",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "maiden",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "marital",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "race",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "ethnicity",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "gender",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "birthplace",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "address",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "city",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "state",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "county",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "fips",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "zip",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "lat",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "lon",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "healthcare_expenses",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "healthcare_coverage",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "income",
+        "nullable": true,
+        "type": "bigint"
+      }
+    ],
+    "status": "PASS"
+  },
+  "payers": {
+    "path": "hdfs://namenode:8020/healthcare/silver/payers",
+    "row_count": 10,
+    "schema": [
+      {
+        "name": "id",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "name",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "ownership",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "address",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "city",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "state_headquartered",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "zip",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "phone",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "amount_covered",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "amount_uncovered",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "revenue",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "covered_encounters",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "uncovered_encounters",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "covered_medications",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "uncovered_medications",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "covered_procedures",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "uncovered_procedures",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "covered_immunizations",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "uncovered_immunizations",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "unique_customers",
+        "nullable": true,
+        "type": "bigint"
+      },
+      {
+        "name": "qols_avg",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "member_months",
+        "nullable": true,
+        "type": "bigint"
+      }
+    ],
+    "status": "PASS"
+  },
+  "procedures": {
+    "path": "hdfs://namenode:8020/healthcare/silver/procedures",
+    "row_count": 943271,
+    "schema": [
+      {
+        "name": "start",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "stop",
+        "nullable": true,
+        "type": "timestamp"
+      },
+      {
+        "name": "patient",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "encounter",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "system",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "code",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "base_cost",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "name": "reason_code",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "name": "reason_description",
+        "nullable": true,
+        "type": "string"
+      }
+    ],
+    "status": "PASS"
+  }
+}

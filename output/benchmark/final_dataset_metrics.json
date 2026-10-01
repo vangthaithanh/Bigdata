@@ -1,0 +1,95 @@
+{
+  "valid": true,
+  "population": 5000,
+  "final_path": "F:\\BigDataHealthcare\\generated-data\\final-5000",
+  "csv_path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv",
+  "total_raw_bytes": 3937386877,
+  "total_raw_mb": 3754.985,
+  "total_raw_gb": 3.667,
+  "total_rows": 12294159,
+  "files": [
+    {
+      "file": "patients.csv",
+      "path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\patients.csv",
+      "bytes": 1718817,
+      "mb": 1.639,
+      "rows": 5715,
+      "exists": true
+    },
+    {
+      "file": "encounters.csv",
+      "path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\encounters.csv",
+      "bytes": 115817587,
+      "mb": 110.452,
+      "rows": 345663,
+      "exists": true
+    },
+    {
+      "file": "conditions.csv",
+      "path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\conditions.csv",
+      "bytes": 30325298,
+      "mb": 28.92,
+      "rows": 208730,
+      "exists": true
+    },
+    {
+      "file": "claims.csv",
+      "path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\claims.csv",
+      "bytes": 245526368,
+      "mb": 234.152,
+      "rows": 636753,
+      "exists": true
+    },
+    {
+      "file": "claims_transactions.csv",
+      "path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\claims_transactions.csv",
+      "bytes": 2484899101,
+      "mb": 2369.784,
+      "rows": 5446261,
+      "exists": true
+    },
+    {
+      "file": "payers.csv",
+      "path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\payers.csv",
+      "bytes": 1937,
+      "mb": 0.002,
+      "rows": 10,
+      "exists": true
+    },
+    {
+      "file": "medications.csv",
+      "path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\medications.csv",
+      "bytes": 76711890,
+      "mb": 73.158,
+      "rows": 291090,
+      "exists": true
+    },
+    {
+      "file": "procedures.csv",
+      "path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\procedures.csv",
+      "bytes": 199169128,
+      "mb": 189.942,
+      "rows": 943271,
+      "exists": true
+    },
+    {
+      "file": "observations.csv",
+      "path": "F:\\BigDataHealthcare\\generated-data\\final-5000\\csv\\observations.csv",
+      "bytes": 783216751,
+      "mb": 746.934,
+      "rows": 4416666,
+      "exists": true
+    }
+  ],
+  "synthea_commit": "d9d07a6eef91ee5144293b42ab64224d84d124f8",
+  "seed": 2026,
+  "reference_date": 20260928,
+  "state": "Massachusetts",
+  "generation": {
+    "command": "REUSED_EXISTING_DATASET",
+    "start_time": null,
+    "end_time": null,
+    "elapsed_seconds": 0
+  },
+  "status": "PASS"
+}
