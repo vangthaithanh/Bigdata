@@ -2,6 +2,7 @@ generated-data/
 *.csv
 *.parquet
 !artifacts/handoff/encounter_features/*.parquet
+!artifacts/handoff/encounter_features_v2/*.parquet
 .env
 build/
 .gradle/

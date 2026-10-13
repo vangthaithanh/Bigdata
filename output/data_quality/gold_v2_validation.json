@@ -1,0 +1,51 @@
+{
+  "categorical_cardinalities": {
+    "condition": 215,
+    "encounter_class": 10,
+    "ethnicity": 2,
+    "gender": 2,
+    "payer": 10,
+    "race": 6
+  },
+  "distinct_encounters": 345487,
+  "duplicate_encounter_id": 0,
+  "gold_v2_size_bytes": 11656340,
+  "gold_v2_size_mb": 11.116,
+  "leakage_fields_used": [],
+  "negative_new_numeric_features": {
+    "condition_count": 0,
+    "distinct_medication_count": 0,
+    "distinct_procedure_count": 0,
+    "encounter_duration_hours": 0,
+    "medication_count": 0,
+    "observation_count": 0,
+    "prior_emergency_count": 0,
+    "prior_encounter_count": 0,
+    "prior_inpatient_count": 0,
+    "procedure_count": 0
+  },
+  "negative_target": 0,
+  "null_new_numeric_features": {
+    "condition_count": 0,
+    "distinct_medication_count": 0,
+    "distinct_procedure_count": 0,
+    "encounter_duration_hours": 0,
+    "medication_count": 0,
+    "observation_count": 0,
+    "prior_emergency_count": 0,
+    "prior_encounter_count": 0,
+    "prior_inpatient_count": 0,
+    "procedure_count": 0
+  },
+  "null_target": 0,
+  "path": "hdfs://namenode:8020/healthcare/gold/encounter_features_v2",
+  "rows": 345487,
+  "source_gold_v1_path": "hdfs://namenode:8020/healthcare/gold/encounter_features",
+  "status": "PASS",
+  "target": {
+    "avg": 2688.0462246914085,
+    "max": 319231.16,
+    "min": 75.0
+  },
+  "target_mismatches_vs_gold_v1": 0
+}

@@ -1,0 +1,39 @@
+{
+  "base_features": [
+    "age",
+    "gender",
+    "race",
+    "ethnicity",
+    "encounter_class",
+    "payer",
+    "condition"
+  ],
+  "contract_version": "2.2",
+  "excluded_leakage_fields": [
+    "payer_coverage",
+    "payments",
+    "adjustments",
+    "outstanding",
+    "claims_transactions.amount",
+    "claim transaction financial totals",
+    "total_procedure_cost",
+    "total_medication_cost",
+    "total_transaction_amount"
+  ],
+  "gold_v2_path": "hdfs://namenode:8020/healthcare/gold/encounter_features_v2",
+  "id_column": "encounter_id",
+  "new_numeric_features": [
+    "condition_count",
+    "procedure_count",
+    "distinct_procedure_count",
+    "medication_count",
+    "distinct_medication_count",
+    "observation_count",
+    "encounter_duration_hours",
+    "prior_encounter_count",
+    "prior_inpatient_count",
+    "prior_emergency_count"
+  ],
+  "source_gold_v1_path": "hdfs://namenode:8020/healthcare/gold/encounter_features",
+  "target": "total_claim_cost"
+}
